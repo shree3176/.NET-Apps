@@ -1,0 +1,239 @@
+﻿html, body {
+	background-color: #fff;
+	color: #000;
+	font: normal 90%/1.8em 'Lucida Grande', Verdana, Geneva, Lucida, Helvetica, Arial, sans-serif;
+	margin: 0;
+}
+h1 {
+	font-size: 1.8em;
+	font-weight: bold;
+	margin-top: 0em;
+	margin-bottom: 0em;
+	color: #fff;
+}
+h2 {
+	font-size: 1.6em;
+	margin: 1.0em 0em 1.0em 0em;
+	font-weight: bold;
+	color: #fff;
+}
+h3 {
+	font-size: 1.2em;
+	margin: 1.0em 0em 1.0em 0em;
+	font-weight: bold;
+	color: #fff;
+}
+p {
+	font-size: 1.1em;
+	line-height: 1.8em;
+	margin: 1.1em 0em 1.1em 0em;
+	text-align: left;
+}
+a:link, a:visited {
+	color: #cc3300;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	color: #ff9900;
+	text-decoration: underline;
+}
+title {
+    color: #a83930;
+}
+#header {
+	height: 100px;
+	padding: 0 10px 0 10px;
+	color: #a83930;
+	background-color: #fdea12;
+	background: url(images/bg_1.gif) repeat top left;
+	border-bottom: 2px solid #a83930;
+}
+#header h1 {
+	padding: 10px 0 0 0;
+	margin: 0 0 0 200px;
+	color: #a83930;
+	margin-left: 200px;
+}
+#logo {
+	background-color: #fdea12;
+	background: url(images/logo.gif);
+	background-position: top left;
+	background-repeat: no-repeat;
+	height: 100px;
+	width: 100px;
+	border: 0;
+	float: left;
+}
+#content {
+	margin-left: 210px; 
+	padding: 0 20px 1.8em 10px;
+	background-color: #fff;
+}
+#breadcrumbs {
+	color: #fdea12;
+	background-color: #a83930;
+	padding: 10px;
+	float: right;
+	clear: left;
+	margin-bottom: 1.8em;
+}
+#breadcrumbs a:link, #breadcrumbs a:visited,
+#breadcrumbs a:hover, #breadcrumbs a:active {
+	color: #fdea12;
+}
+#sidebar {
+	float:left;
+	padding: 0 10px 10px 10px;
+	background-color: #a83930;
+	background-image: url(images/bg_2.gif);
+	background-repeat: repeat-y;
+	background-position: top left;
+	border-top: 2px solid #fdea12;
+	border-bottom: 2px solid #a83930; 
+	width: 168px;  /* ds */
+}
+html>body #sidebar {
+	width: 180px;
+}
+#sidebar h3 {
+  font-weight: bold;
+  padding-bottom: 0.5em;
+  border-bottom: 1px dashed #fdea12;
+  color: #fdea12;
+}
+#nav {
+}
+#nav li {
+	display: inline; /* for IE5 and IE6 */
+}
+#nav ul {
+	margin-left: 0;
+	padding-left: 0;
+	list-style-type: none;
+}
+#nav a:link, #nav a:visited {
+	display: block;
+	width: 99.99%; /* for IE5 */
+	color: #fdea12;
+	text-decoration: none;
+	padding: 0.5em;
+	font-weight: bold;
+}
+#nav a:hover {
+	text-decoration: none;
+	color: #a83930;
+	background-color: #fdea12;	
+}
+.dynamicMenu {
+    background-color:#a83930;
+    background-color:green;
+    border-color: #fdea12;
+}
+.dynamicMenuItem
+{
+    background-color: #a83930;
+    border-color: #fdea12;
+    border-style: solid;
+}
+.login {
+	color: #a83930;
+	background-color: #fdea12;
+	padding: 10px;
+	font: normal 1.1em/1.1em verdana, arial, helvetica, sans-serif;
+}
+.login td {
+	color:#a83930;
+	background-color: #fdea12;
+	font: bold 0.8em/0.8em verdana, arial, helvetica, sans-serif;
+}
+.login td.title {
+	color: #a83930;
+	font: bold 1.0em/1.0em verdana, arial, helvetica, sans-serif;
+	text-align: center;
+	padding-bottom: 10px;
+}
+.loggedinout {
+    color: #a83930;
+    background-color: #fdea12;
+    padding: 10px;
+    font: 0.9em/1.4em verdana, arial, helvetica, sans-serif;
+}
+.title {
+    color: #a83930;
+    font: bold 1.0em/1.0em verdana, arial, helvetica, sans-serif;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: #a83930 thin solid;
+    margin-bottom: 5px;
+}
+#footer {
+	margin-left: 210px; 
+	padding: 0 20px 1.8em 10px;
+	border-top: 1px solid #a83930;
+	clear: both;
+}
+#footer p {
+	font: normal 0.8em/0.9em verdana, arial, helvetica, sans-serif;
+	color: #666;
+}
+#footer p.left {
+	float: left;
+	clear: left;
+}
+#footer p.right {
+	float: right;
+	clear: right;
+}
+.spacer {
+	clear: both;
+}
+dd, dt {
+	font-size: 0.95em;
+}
+#mainTitle {
+	font-size: 2.0em;
+	font-weight: bold;
+	visibility: hidden;
+}
+.pageTitle {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.itemTitle {
+	border-bottom: 1px solid #a83930;
+	font-size: 1.5em;
+}
+.itemContent {
+	padding-bottom: 1.8em;
+}
+.box {
+    border: solid 1px #a83930;
+}
+.boxFloat {
+    border: solid 1px #a83930;
+    float: left;
+}
+.newsItem {
+	padding-top: 1.0em;
+	border-bottom: 1px solid #a83930;
+	width: 100%;
+}
+.newsTitle 
+{
+	font-size: 110%;
+    /*
+	float: left;
+    */
+}
+.newsDate {
+    font: normal 0.9em/0.9em 'Lucida Grande', Verdana,  Geneva, Lucida, Helvetica, Arial, sans-serif;
+	float: right;
+	clear: right;
+	color: #666666;
+}
+.newsContent {
+	text-align: left;
+}

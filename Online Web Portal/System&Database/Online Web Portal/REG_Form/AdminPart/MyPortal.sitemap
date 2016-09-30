@@ -1,0 +1,30 @@
+﻿<siteMap>
+	
+	<siteMapNode title="Home" url="AdminPart/Admin.aspx" 
+				description="Sell and Purchase Pre-Owned Vehicles Admin Home Page">
+		
+		<siteMapNode title="Subscriber" url="sub.aspx"
+					description="To add the new Subscriber" >
+			<siteMapNode title="Add New Subscriber" url="AdminPart/AddNewSubscriber.aspx?type=add"
+							  description="Subscribe new user" />
+			<siteMapNode title="Delete Subscriber" url="AdminPart/DeleteSubscriber.aspx?type=delete"
+							  description="Delete the existing subscriber" />
+			<siteMapNode title="Change Status" url="AdminPart/SetMemberStatus.aspx?type=change"
+							  description="Change status of subscribers as free or paid" />
+			<siteMapNode title="View Subscribers" url="AdminPart/ViewSubscribers.aspx?type=view"
+							  description="View the list of paid as well as free subscribers" />
+		</siteMapNode>
+		
+		<siteMapNode title="Vehicle" url="vehicle.aspx" description="vehicles">
+			<siteMapNode title="Add Vehicle Details" url="AdminPart/Admin_AddVehicle.aspx?type=f" description="Click to add used vehicle details" />
+			<siteMapNode title="Delete Vehicle Details" url="AdminPart/DeleteVehicle.aspx?type=f" description="Click to delete used vehicle details" />
+			<siteMapNode title="Approve/Reject Vehicle" url="AdminPart/ArVehicle.aspx?type=f" description="To take action on the details of the vehicle" />
+            <siteMapNode title="Search Vehicles" url="AdminPart/AdminSearchVehicle.aspx" description="To search the details of vehicle" />
+		</siteMapNode>
+	
+		<siteMapNode title="Send Message" url="AdminPart/SendMessage.aspx"> </siteMapNode>
+		<siteMapNode title="Logout" url="AdminPart/login.aspx"> </siteMapNode>
+	
+	</siteMapNode>
+
+</siteMap>

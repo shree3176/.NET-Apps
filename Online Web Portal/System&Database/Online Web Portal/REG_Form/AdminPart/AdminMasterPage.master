@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="AdminMasterPage" %>
+
+<%@ Import Namespace="System.IO" %>
+<%@ Import Namespace="System.Configuration" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="PageHead" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en-uk" />
+    <title>Online Web Portal for Selling and Purchasing Used Vehicles</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="AdminStyleSheet.css" runat="server" />
+  
+</head>
+<body background="">
+  <form id="mainForm" runat="server">
+    <div>
+        <div id="header"  >
+            <div id="logo">
+                <br />
+                <asp:ImageButton ID="ImageButton1" runat="server" Height="90px" 
+                    ImageUrl="~/Images/snplogo.PNG" />
+            </div>
+            <h1>Sell & Purchase Pre-Owned Vehicles  </h1>
+            
+             
+        </div>
+        
+        
+        <div id="sidebar">
+            <h3>Navigation</h3>
+            <asp:sitemapdatasource id="siteData" runat="server" />
+            <div id="nav">
+                <asp:menu id="MyMenu" runat="server" datasourceid="siteData"
+                    staticdisplaylevels="2" StaticSubMenuIndent="0"
+                    disappearafter="200"
+                    AccessKey="m"
+                    EnableViewState="false">
+                    <DynamicMenuStyle CssClass="dynamicMenu" />
+                    <DynamicMenuItemStyle CssClass="dynamicMenuItem" />
+               </asp:menu>
+            </div>
+        </div>
+        
+        
+        <div id="content">
+
+            <div class="itemContent">
+                <asp:contentplaceholder id="mainContent" runat="server" />
+            </div>
+            
+            <div id="breadcrumbs">
+                <asp:sitemappath style="float:left" id="crumbs" runat="server"  />
+            </div>
+        </div>
+
+  
+        <div id="footer">
+	        <p class="left">All content copyright &copy; APIIT and its subsidiaries 2014.</p>
+	        <p class="right">Website designed by <a href="http://www.frogboxdesign.co.uk/" title="croak">Bhagyashri - PT1082238</a></p>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

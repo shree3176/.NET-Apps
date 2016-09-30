@@ -1,0 +1,104 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MetalBalls.master.cs" Inherits="MetalBalls" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="PageHead" runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en-uk" />
+
+    <title>Sell and Purchase Pre-Owned Vehicles</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link id="Link1"  rel="stylesheet" type="text/css" href="MyStyleSheet.css" runat="server" />
+    <style type="text/css">
+        .separator
+        {}
+    </style>
+</head>
+
+<body background="" bgcolor="Silver" style="background-color: #C0C0C0">
+ <div style="background-image: url('/REG_Form/Images/3-d-568a.jpg')">
+    <form id="mainForm" runat="server">
+   
+        <div id="header">
+            <div id="logo"><br />
+                <asp:ImageButton ID="ImageButton1" runat="server" Height="90px" 
+                    ImageUrl="~/Images/snplogo.PNG" /></div>
+            <h1>Sell and Purchase Pre-Owned Vehicles</h1>
+
+        </div>
+        <div style="float: left"> <table  style="width: 920px; height: 52px; "><tr>
+             <td>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                 &nbsp;</td>
+             <td class="style4">
+               <asp:Menu ID="FreeMenu" runat="server" Orientation="Horizontal" 
+                     BorderStyle="None" Font-Size="Larger" 
+                    ForeColor="Black" BorderColor="#CCCCCC" CssClass="separator" Font-Bold="True" 
+                    Font-Names="Times New Roman" Font-Overline="False" Font-Strikeout="False" 
+                    Font-Underline="False" Height="10px" RenderingMode="Table" Width="678px" 
+                     Visible="False" 
+                     >
+                    <Items>
+                      <asp:MenuItem NavigateUrl="SubscriberHomePage.aspx" Text="Home" 
+                            Value="Home" ImageUrl="..\Images\House-icon.png" ></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="AddVehicle.aspx" Text="Add Vehicle" 
+                            Value="Add Vehicle" ImageUrl="..\Images\car-add-icon.png" ></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="SubscriberInbox.aspx" Text="Check Message" 
+                            Value="Check Message" ImageUrl="../Images/new-message-icon.png"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="FreeLogin.aspx"  Text="Logout" Value="Logout" ImageUrl="..\Images\logout-icon.png">
+                        </asp:MenuItem>
+                    </Items>
+                    <StaticHoverStyle BackColor="#999999" Font-Bold="True" Font-Names="Algerian" 
+                        Font-Overline="False" Font-Size="X-Large" Font-Strikeout="False" 
+                        Font-Underline="True" />
+                </asp:Menu>
+                <asp:Menu ID="PaidMenu" runat="server" Orientation="Horizontal" 
+                     BorderStyle="None" Font-Size="Larger" 
+                    ForeColor="Black" BorderColor="#CCCCCC" CssClass="separator" Font-Bold="True" 
+                    Font-Names="Times New Roman" Font-Overline="False" Font-Strikeout="False" 
+                    Font-Underline="False" Height="10px" RenderingMode="Table" Width="678px"  Visible="False" 
+                     >
+                    <Items>
+                      <asp:MenuItem NavigateUrl="PaidSubscriberHomePage.aspx" Text="Home" 
+                            Value="Home" ImageUrl="..\Images\House-icon.png" ></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="AddVehicle.aspx" Text="Add Vehicle" 
+                            Value="Add Vehicle" ImageUrl="..\Images\car-add-icon.png" ></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="SubscriberInbox.aspx" Text="Check Message" 
+                            Value="Check Message" ImageUrl="../Images/new-message-icon.png"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="PaidLogin.aspx"  Text="Logout" Value="Logout" ImageUrl="..\Images\logout-icon.png">
+                        </asp:MenuItem>
+                    </Items>
+                    <StaticHoverStyle BackColor="#999999" Font-Bold="True" Font-Names="Algerian" 
+                        Font-Overline="False" Font-Size="X-Large" Font-Strikeout="False" 
+                        Font-Underline="True" />
+                </asp:Menu>
+            
+           </td></tr></table>
+        </div>
+
+        <div id="content" style="background-image: url('/REG_Form/Images/3-d-568a.jpg')">
+
+            <h2><asp:Label ID="PageTitle" runat="server" /></h2>
+            
+            <div class="itemContent">
+           <asp:contentplaceholder id="mainContent" runat="server" />
+            </div>
+            
+            <div id="breadcrumbs">
+                <asp:sitemappath style="float:left" id="crumbs" runat="server"  />
+            </div>
+        </div>
+
+  
+        <div id="footer">
+	        <p class="left">All content copyright &copy; APIIT and its subsidiaries 2014.</p>
+	        <p class="right">Website designed by <a href="http://www.frogboxdesign.co.uk/" title="croak">Bhagyashri - PT1082238</a></p>
+        </div>
+    
+    </form>
+    </div>
+    </body>
+</html>
+
