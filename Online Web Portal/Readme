@@ -1,0 +1,25 @@
+1.   User Registration
+Provide registration page for Visitor/anonymous user. The system maintains two types of users: Free Subscriber and Paid Subscriber. 
+
+2.   Login
+Only registered subscribers should be able to login. There should be separate login for free subscribers and paid subscribers. Provide interface to free subscribers to send request to admin for being paid.  
+
+3.   Uploading Vehicle Details 
+Only registered subscribers would be able to upload vehicle details. The uploaded details would be available during search only once it is approved by the administrator.
+
+4.	Searching Vehicles
+Only registered subscribers should be able to search vehicles based upon different criteria. Contact information of seller would be displayed only to paid subscribers.
+
+5.	Website Admin
+An admin section to allow
+1.	Setting status of members as free subscriber/paid subscriber.
+2.	Adding new subscribers/vehicles.
+3.	Deleting existing subscribers/vehicles.
+4.	Viewing list of all free subscribers /paid subscribers.
+5.	Searching vehicles (Contact information would be displayed)
+6.	Approving/Rejecting uploaded vehicle details
+6.	There must be a section for the admin to send private messages to single & multiple users.
+
+7.	Customization 
+The Web application you are required to develop should include customization capability such as look and feel customization and settings of user customization must be stored in the database. 
+
